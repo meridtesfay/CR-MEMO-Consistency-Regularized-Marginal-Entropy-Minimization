@@ -1,2 +1,4 @@
 # CR-MEMO-Consistency-Regularized-Marginal-Entropy-Minimization
-Test-Time Adaptation (TTA) with MEMO: Robustness under distribution shift on ImageNet-A/V2 using ResNet and DenseNet, featuring a custom consistency-regularized entropy loss.
+CR-MEMO improves upon the original Marginal Entropy Minimization (MEMO) by introducing a consistency-regularization penalty. 
+By penalizing the KL-divergence between individual augmented predictions and their marginal average, 
+we ensure the model remains robust and semantically consistent under extreme distribution shifts.
