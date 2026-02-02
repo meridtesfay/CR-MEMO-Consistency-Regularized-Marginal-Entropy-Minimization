@@ -38,3 +38,31 @@ The following table summarizes the performance of standard MEMO variants and my 
 | &nbsp;&nbsp;&nbsp; + Cons_BN_FLIP | 10.67 | (+8.52) | 73.32 | (+11.33) |
 
 Key Finding: My modification (Cons_BN_FLIP) achieved the state-of-the-art result for ResNet-50 on ImageNet-V2, showing a +9.12% improvement over the baseline.
+
+🛠 Repository Structure
+
+├── assets/                 # Results images and plots
+├── src/                    # Core logic
+│   ├── losses.py           # CR-MEMO Loss (KL + Marginal Entropy)
+│   ├── model.py            # Model loading & AdaBN
+│   └── tta.py              # Adaptation loop logic
+├── main.py                 # CLI for running experiments
+├── requirements.txt        # Dependencies
+└── MEMO_Implementation.ipynb # Original experimental notebook
+
+🚀 Quick Start
+
+# 1. Install dependencies
+pip install -r requirements.txt
+
+# 2. Run ResNet-50 with Consistency Regularization
+python main.py --arch resnet50 --dataset imagenet-v2 --kl_weight 0.1
+
+
+📚 References
+
+    Zhang et al. (2022). MEMO: Test Time Robustness via Adaptation and Augmentation. NeurIPS.
+
+    Hendrycks et al. (2021). Natural Adversarial Examples. CVPR.
+
+    Xie et al. (2020). Unsupervised Data Augmentation for Consistency Training. NeurIPS.
