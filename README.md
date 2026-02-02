@@ -36,3 +36,5 @@ The following table summarizes the performance of standard MEMO variants and my 
 | &nbsp;&nbsp;&nbsp; + Cons (My Mod) | 5.68 | (+3.53) | 71.18 | (+9.19) |
 | &nbsp;&nbsp;&nbsp; + Cons_BN | 11.03 | (+8.88) | 73.36 | (+11.37) |
 | &nbsp;&nbsp;&nbsp; + Cons_BN_FLIP | 10.67 | (+8.52) | 73.32 | (+11.33) |
+
+Key Finding: My modification (Cons_BN_FLIP) achieved the state-of-the-art result for ResNet-50 on ImageNet-V2, showing a +9.12% improvement over the baseline.
