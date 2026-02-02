@@ -59,6 +59,9 @@ pip install -r requirements.txt
 python main.py --arch resnet50 --dataset imagenet-v2 --kl_weight 0.1
 
 
+
+
+
 📚 References
 
     Zhang et al. (2022). MEMO: Test Time Robustness via Adaptation and Augmentation. NeurIPS.
